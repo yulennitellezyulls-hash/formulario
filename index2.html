@@ -1,31 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Formulario CRUD</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
 <div class="contenedor">
 
-    <h1>Registro</h1>
+    <h1>Registro de Personas</h1>
 
-    <form id="formulario" action="guardar.php" method="POST">
+    <form id="formulario"
+          action="guardar.php"
+          method="POST">
 
-        <input type="text" name="Nombre" id="Nombre" placeholder="Nombre">
+        <input type="text"
+               name="Nombre"
+               id="Nombre"
+               placeholder="Nombre"
+               required>
 
-        <input type="text" name="ApellidoP" id="ApellidoP" placeholder="Apellido Paterno">
+        <input type="text"
+               name="ApellidoP"
+               id="ApellidoP"
+               placeholder="Apellido Paterno"
+               required>
 
-        <input type="text" name="ApellidoM" id="ApellidoM" placeholder="Apellido Materno">
+        <input type="text"
+               name="ApellidoM"
+               id="ApellidoM"
+               placeholder="Apellido Materno"
+               required>
 
-        <input type="date" name="fechanacimiento" id="fechanacimiento">
+        <input type="date"
+               name="fechanacimiento"
+               id="fechanacimiento"
+               required>
 
-        <input type="text" name="Curp" id="Curp" placeholder="CURP">
+        <input type="text"
+               name="Curp"
+               id="Curp"
+               placeholder="CURP"
+               maxlength="18"
+               required>
 
-        <button type="submit">Guardar</button>
+        <button type="submit">
+            Guardar
+        </button>
 
     </form>
 
